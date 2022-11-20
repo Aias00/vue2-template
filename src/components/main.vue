@@ -46,7 +46,7 @@
         <div slot="trigger"></div> -->
       <!-- </Sider> -->
       <Layout class="layout-right">
-        <Header
+        <!-- <Header
           class="layout-header-bar"
           :style="{ position: 'fixed', width: '100%', zIndex: 99 }"
         >
@@ -63,8 +63,8 @@
             ></span
           >
           <Button type="primary" icon="search" @click="clearData">清理</Button>
-        </Header>
-        <Content
+        </Header> -->
+        <!-- <Content
           :style="{
             // margin: '88px 20px 0',
             background: '#fff',
@@ -72,7 +72,7 @@
           }"
         >
           <NavSub :data="data" :spinShow="spinShow"></NavSub>
-        </Content>
+        </Content> -->
         <!-- <Footer class="layout-footer-center">lenav ©2021 Created by Lework <a href="https://github.com/lework/lenav" target="_blank">GitHub</a></Footer> -->
       </Layout>
     </Layout>
@@ -105,7 +105,7 @@ export default {
   },
   created: function () {
     // window.console.group('------Create创建前状态------');
-    this._getData()
+    // this._getData()
   },
   methods: {
     _getData () {
