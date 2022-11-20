@@ -95,24 +95,24 @@ module.exports = {
     port: 8080,
     https: false,
     hotOnly: false,
-    proxy: {
+    // proxy: {
       //   //  设置代理
       //   //  proxy all requests starting with /api to jsonplaceholder
-      '^/nacos': {
-        target: 'http://19945678.xyz/nacos', //真实请求的目标地址
-        changeOrigin: true,
-        pathRewrite: {
-          '^/nacos': ''
-        }
-      },
-      '^/gallery': {
-        target: 'http://localhost:9080/gallery', //真实请求的目标地址
-        changeOrigin: true,
-        pathRewrite: {
-          '^/gallery': ''
-        }
-      }
-    },
+      // '^/nacos': {
+      //   target: 'http://19945678.xyz/nacos', //真实请求的目标地址
+      //   changeOrigin: true,
+      //   pathRewrite: {
+      //     '^/nacos': ''
+      //   }
+      // },
+      // '^/gallery': {
+      //   target: 'http://localhost:9080/gallery', //真实请求的目标地址
+      //   changeOrigin: true,
+      //   pathRewrite: {
+      //     '^/gallery': ''
+      //   }
+      // }
+    // },
     // before: (app) => { }
   },
   // 第三方插件配置
